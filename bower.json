@@ -3,6 +3,6 @@
   "description": "UVA logo",
   "main": "uva-logo.html",
   "dependencies": {
-    "uvalib-elements": "uvalib-components/uvalib-elements#master" 
+    "uva-elements": "uva-components/uva-elements#2.0" 
   }
 }
