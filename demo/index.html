@@ -1,40 +1,75 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>uva-centered-logo demo</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>uva-logos demo</title>
+
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../uva-theme/uva-theme.html">
+    <link rel="import" href="../uva-logos.html">
 
-    <link rel="import" href="../uva-logo.html">
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
-        demo-snippet.reverse {
-          --demo-snippet-demo: {background-color: black;}
+        .centered {
+          min-width: 800px;
+        }
+        .darkbg {
+          --demo-snippet-demo: {
+            background-color: var(--color-jefferson-blue);
+          };
+          background-color: var(--color-jefferson-blue);
         }
       </style>
     </custom-style>
   </head>
   <body>
-
     <div class="vertical-section-container centered">
-      <h3>Primary Logo Demo</h3>
-      <demo-snippet class="reverse">
+      <h3>Horizontal Logo in Two-Color Reverse uva-logos demo</h3>
+      <demo-snippet class="darkbg">
         <template>
-          <uva-logo></uva-logo>
-        </template>
-      </demo-snippet>
-
-      <h3>Basic uva-centered-logo Demo</h3>
-      <demo-snippet class="reverse">
-        <template>
-          <uva-logo></uva-logo>
+          <uva-logos reverse two-color></uva-logos>
         </template>
       </demo-snippet>
     </div>
-
+    <div class="vertical-section-container centered">
+      <h3>Centered Logo in One-Color Reverse uva-logos demo</h3>
+      <demo-snippet class="darkbg">
+        <template>
+          <uva-logos variation="centered" reverse></uva-logos>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Primary Logo Minimum Size uva-logos demo</h3>
+      <demo-snippet>
+        <template>
+          <uva-logos style="height: 2px;" variation="primary"></uva-logos>
+          <uva-logos class="darkbg" style="height: 10px;" variation="primary" reverse two-color></uva-logos>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Horizontal Logo Minimum Size uva-logos demo</h3>
+      <demo-snippet>
+        <template>
+          <uva-logos style="height: 2px;"></uva-logos>
+          <uva-logos class="darkbg" style="height: 10px;" reverse two-color></uva-logos>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Centered Logo Minimum Size uva-logos demo</h3>
+      <demo-snippet>
+        <template>
+          <uva-logos style="height: 2px;" variation="centered"></uva-logos>
+          <uva-logos class="darkbg" style="height: 10px;" variation="centered" reverse two-color></uva-logos>
+        </template>
+      </demo-snippet>
+    </div>
   </body>
 </html>

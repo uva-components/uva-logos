@@ -1,8 +1,8 @@
 {
-  "name": "uva-logo",
-  "description": "UVA logo",
-  "main": "uva-logo.html",
+  "name": "uva-logos",
+  "description": "https://brand.virginia.edu/brand-essentials/web-guidelines/web-logos",
+  "main": "uva-logos.html",
   "dependencies": {
-    "uva-elements": "uva-components/uva-elements#2.0" 
+    "uva-elements": "uva-components/uva-elements#2.0"
   }
 }
